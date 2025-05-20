@@ -4,52 +4,54 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Réparation Smartphones Pro</title>
+    <title>Réparation Smartphone</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <div class="logo">📱 RépaSmart</div>
-        <div class="contact-info">
+        <div class="logo">RépaSmart</div>
+        <div class="contact">
             <span>📞 0487 56 89 12</span>
-            <a href="tel:0487568912" class="btn-call">Appeler maintenant</a>
-            <a href="https://wa.me/32487568912" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            <a href="tel:+32487568912" class="btn-call">Appeler</a>
         </div>
     </header>
-
-    <nav class="menu">
-        <a href="#about">À propos</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+    <nav>
+        <ul>
+            <li><a href="#services">Nos services</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-
+    <section id="services">
+        <h2>Nos services</h2>
+        <div class="service">
+            <div class="icon">📱</div>
+            <p>Réparation d'écran</p>
+        </div>
+        <div class="service">
+            <div class="icon">🔋</div>
+            <p>Changement de batterie</p>
+        </div>
+        <div class="service">
+            <div class="icon">🛠️</div>
+            <p>Réparation générale</p>
+        </div>
+    </section>
     <section id="about">
         <h2>À propos</h2>
-        <p>Service rapide et professionnel de réparation de smartphones à domicile. Qualité garantie.</p>
+        <p>RépaSmart est une entreprise spécialisée dans la réparation rapide et fiable de smartphones. Nous nous engageons à offrir un service de qualité à des prix compétitifs.</p>
     </section>
-
-    <section id="services">
-        <h2>Services</h2>
-        <ul>
-            <li>🔧 Remplacement écran</li>
-            <li>🔋 Remplacement batterie</li>
-            <li>📱 Déblocage & réparation logicielle</li>
-            <li>💧 Réparation dégâts liquides</li>
-        </ul>
-    </section>
-
     <section id="contact">
-        <h2>Contactez-nous</h2>
+        <h2>Contact</h2>
         <form>
             <input type="text" name="name" placeholder="Votre nom" required />
-            <input type="tel" name="phone" placeholder="Votre téléphone" required />
+            <input type="email" name="email" placeholder="Votre email" required />
             <textarea name="message" placeholder="Votre message" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
     </section>
-
     <footer>
-        <p>© 2025 RépaSmart - 0487 56 89 12</p>
+        <p>&copy; 2025 RépaSmart</p>
     </footer>
 </body>
 </html>

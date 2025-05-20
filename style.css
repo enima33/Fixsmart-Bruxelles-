@@ -1,117 +1,100 @@
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
-    margin: 0; padding: 0;
 }
 header {
-    background: #002855;
-    color: white;
+    background-color: #1E1E1E;
+    color: #FF6F00;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
     align-items: center;
 }
-.logo {
+header .logo {
     font-size: 1.5em;
     font-weight: bold;
 }
-.contact-info span {
-    margin-right: 15px;
-}
-.btn-call, .btn-whatsapp {
-    background: #ff6600;
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin-left: 10px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-.btn-call:hover, .btn-whatsapp:hover {
-    background: #cc5200;
-}
-.menu {
-    background: #004080;
+header .contact {
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    align-items: center;
 }
-.menu a {
-    color: white;
+header .contact .btn-call {
+    background-color: #FF6F00;
+    color: #fff;
+    padding: 5px 10px;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
+    margin-left: 10px;
+    border-radius: 5px;
 }
-.menu a:hover {
-    text-decoration: underline;
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 section {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 15px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
 }
-h2 {
-    color: #002855;
-    border-bottom: 3px solid #ff6600;
-    padding-bottom: 5px;
+section h2 {
+    color: #FF6F00;
 }
-ul {
-    list-style: none;
-    padding-left: 0;
+.service {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
 }
-ul li {
-    margin: 10px 0;
-    font-size: 1.1em;
+.service .icon {
+    font-size: 2em;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-}
-input, textarea {
-    margin: 10px 0;
+form input, form textarea {
+    width: 100%;
     padding: 10px;
-    font-size: 1em;
+    margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+    border-radius: 5px;
 }
-button {
-    background: #ff6600;
-    color: white;
-    font-weight: bold;
+form button {
+    background-color: #FF6F00;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
 }
-button:hover {
-    background: #cc5200;
+form button:hover {
+    background-color: #e65c00;
 }
 footer {
     text-align: center;
-    padding: 15px;
-    background: #002855;
-    color: white;
-    margin-top: 40px;
+    padding: 10px;
+    background-color: #1E1E1E;
+    color: #fff;
 }
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .contact-info {
-        margin-top: 10px;
-    }
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-    .menu a {
-        margin: 8px 0;
+    .service {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
     }
 }
